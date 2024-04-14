@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>LDR ESP</title>
+        <script>
+            window.setTimeout( function() {
+            window.location.reload();
+            }, 1000);
+        </script>
+    </head>
+    <body>
+
+  {% if (status) == 0  %}
+  <p>Light detected! Turning OFF Headlight </p>
+  <img src="../static/image-1.png" width="100%" height="100%">
+   {% endif %}
+
+    {% if (status) == 1 %}
+  <p>No light detected! Turning ON Headlight</p>
+  <img src="../static/image-2.png" width="100%" height="100%">
+   {% endif %}
+
+   </body>
+ </html>
